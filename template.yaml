@@ -8,3 +8,9 @@ Resources:
       Handler: main.handler
       Runtime: python3.6
       CodeUri: src
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: get
